@@ -1,0 +1,8 @@
+accelerate
+datasets
+evaluate
+numpy
+pandas
+sacrebleu
+torch
+transformers
