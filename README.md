@@ -6,6 +6,8 @@ Eye-gaze locations are recorded using ARKit. The UI presents a standard QWERTY k
 
 ![App UI showing the 9-cluster keyboard with eye-gaze cursor](image.png)
 
+![End-to-end pipeline: gaze direction → cluster number → English sentence](endtoend.png)
+
 ## How It Works
 
 The QWERTY keyboard is divided into spatial regions. Each key maps to a cluster digit:
