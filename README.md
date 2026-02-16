@@ -32,19 +32,19 @@ pip install -r requirements.txt
 **1. Prepare the dataset** — convert English text into cluster sequences:
 
 ```bash
-python emnlp_touchless_typing_train.py prepare --input eng-fra-original.csv --clusters 9
+python train.py prepare --input eng-fra-original.csv --clusters 9
 ```
 
 **2. Train the model:**
 
 ```bash
-python emnlp_touchless_typing_train.py train --model facebook/bart-large --fp16 --epochs 4
+python train.py train --model facebook/bart-large --fp16 --epochs 4
 ```
 
 **3. Run inference:**
 
 ```bash
-python emnlp_touchless_typing_train.py infer --model hungngo04/cluster_to_text_t5_base --text "51663 531 421"
+python train.py infer --model hungngo04/cluster_to_text_t5_base --text "51663 531 421"
 ```
 
 ## Cluster Configurations
