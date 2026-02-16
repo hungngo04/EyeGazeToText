@@ -4,6 +4,8 @@ Training code for translating eye-gaze location clusters to English words using 
 
 Eye-gaze locations are recorded using ARKit. The UI presents a standard QWERTY keyboard divided into clusters (groups of nearby keys). After the user fixates on a cluster for a threshold duration, that cluster is recorded as a digit. When the space key is detected, the accumulated cluster sequence is sent for inference, translating it back into English text.
 
+The ARKit app can be found [here](https://github.com/hungngo04/TouchlessTyping)
+
 ![App UI showing the 9-cluster keyboard with eye-gaze cursor](image.png)
 
 ![End-to-end pipeline: gaze direction → cluster number → English sentence](endtoend.png)
